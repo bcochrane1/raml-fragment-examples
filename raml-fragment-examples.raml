@@ -20,8 +20,7 @@ types:
       id: integer
       name: string
       email: string
-      example: !include fragments/example.raml
-      
+
   User: !include fragments/dataType.raml
 
 resourceTypes:
@@ -40,8 +39,8 @@ uses:
       200:
         body:
           application/json:
-            type: User[]
-            example: [!include fragments/example.raml]
+            type: User
+            example: !include fragments/example.raml
 
 
     

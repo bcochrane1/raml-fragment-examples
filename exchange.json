@@ -1,5 +1,6 @@
 {
   "dependencies": [],
   "name": "raml-fragment-examples",
-  "main": "raml-fragment-examples.raml"
+  "main": "raml-fragment-examples.raml",
+  "groupId": "5854e6ad-4c66-47c0-921e-72092756f614"
 }

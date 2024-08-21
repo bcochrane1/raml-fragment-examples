@@ -2,5 +2,12 @@
   "dependencies": [],
   "name": "raml-fragment-examples",
   "main": "raml-fragment-examples.raml",
-  "groupId": "5854e6ad-4c66-47c0-921e-72092756f614"
+  "groupId": "5854e6ad-4c66-47c0-921e-72092756f614",
+  "organizationId": "5854e6ad-4c66-47c0-921e-72092756f614",
+  "assetId": "raml-fragment-examples",
+  "version": "1.0.0",
+  "apiVersion": "v1",
+  "tags": [],
+  "classifier": "raml",
+  "originalFormatVersion": "1.0"
 }

@@ -1,0 +1,46 @@
+#%RAML 1.0
+documentation:
+  - !include fragments/documentation.raml
+
+title: Test Application
+
+securitySchemes:
+  oauth_2.0: !include fragments/securityScheme.raml
+  
+annotationTypes:
+  description: !include fragments/annotationType.raml
+  
+traits:
+  requestId: !include fragments/trait.raml
+
+types:
+  ExampleUser: 
+    type: object
+    properties: 
+      id: integer
+      name: string
+      email: string
+      example: !include fragments/example.raml
+  User: !include fragments/dataType.raml
+
+resourceTypes:
+  collection: !include fragments/resourceType.raml
+
+uses:
+  common: fragments/library.raml
+
+
+/users:
+  securedBy: [oauth_2.0]
+  (description): "This resource manages users"
+  get:
+    is: [ common.paginated ]
+    responses:
+      200:
+        body:
+          application/json:
+            type: User[]
+            example: [!include fragments/example.raml]
+
+
+    

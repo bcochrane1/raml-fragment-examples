@@ -1,0 +1,16 @@
+#%RAML 1.0 Library
+types:
+  User:
+    type: object
+    properties:
+      id: integer
+      name: string
+      email: string
+
+traits:
+  paginated:
+    queryParameters:
+      page:
+        type: integer
+      pageSize:
+        type: integer
